@@ -3,13 +3,9 @@
 </script>
 
 <template>
-  <div>
-    day la header
-  </div>
+  <AppHeader/>
   <slot/>
-  <div>
-    day la footer
-  </div>
+  <AppFooter/>
 </template>
 
 <style scoped>
