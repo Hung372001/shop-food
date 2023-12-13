@@ -1,4 +1,10 @@
-<script lang="ts" setup>
+<script lang="ts" setup >
+useHead({
+  title: 'Home',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
 const show = ref(true)
 const dropDown = () => {
   show.value = !show.value
@@ -43,16 +49,26 @@ const dropDown = () => {
             </div>
           </div>
         </div>
-
         <div class="banner" style="  background-image: url('/images/banner.jpg')">
-
+           <div class="banner-text">
+               <span>FRUIT FRESH</span>
+               <h2>
+                 Vegetable
+                 <br>
+                 100% Organic
+               </h2>
+             <p>Free Pickup and Delivery Available</p>
+              <NuxtLink>SHOP NOW</NuxtLink>
+           </div>
         </div>
       </div>
     </div>
+     <ProductCategory style="margin-top: 50px"/>
+     <featured-product/>
+     <FormBlog/>
   </div>
 </template>
 
 <style scoped>
 
 </style>
-<y></y>
